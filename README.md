@@ -1334,7 +1334,7 @@ So, here is the code:
 
 ```q
 /what is f[], and can we read it?
-f:{$[2>#?x;x;,/f'x@&:'~:\x<*1?x]}
+f:{$[2>#?x;x;,/f'x@&'~\:x<*1?x]}
 ```
 
 This little monster is deliberately designed to make as little sense as possible at first glance, but once we take it apart, we hope you'll agree it is actually very simple and readable:
@@ -1661,7 +1661,7 @@ public final class qs{public void s(int[] x){}}
 ```
 
 ```q
-qs:{$[2>#?x;x;,/qs'x@&:'~:\x<*1?x]}
+qs:{$[2>#?x;x;,/qs'x@&'~\:x<*1?x]}
 ```
 
 Now, compare the source code of these two:
